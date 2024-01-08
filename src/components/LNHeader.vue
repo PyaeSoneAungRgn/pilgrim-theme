@@ -1,7 +1,6 @@
 <script setup lang="ts">
 import LNLogo from './LNLogo.vue'
 import LNVersionPicker from './LNVersionPicker.vue'
-import LNThemeSwitcher from './LNThemeSwitcher.vue'
 import LNSidebar from './LNSidebar.vue'
 import {
   Bars3Icon,
@@ -119,7 +118,6 @@ function setDotMenuOpen(value: boolean): void {
           </div>
 
           <div class="hidden md:flex md:items-center gap-6 pl-6">
-            <LNThemeSwitcher />
             <LNGitHubLink v-if="shouldShowGitHubLink" />
           </div>
 
