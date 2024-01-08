@@ -2,12 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-html.dark {
-  color-scheme: dark;
-}
-html.light {
-  color-scheme: light;
-}
 
 :root {
   --shiki-color-text: #24292e;
@@ -21,6 +15,7 @@ html.light {
   --shiki-token-punctuation: #24292e;
   /* --shiki-token-parameter: #24292e; */
   /* --shiki-token-link: #d73a49; */
+  color-scheme: only light;
 }
 
 html {

@@ -21,7 +21,7 @@ const config = {
 
   markdown: {
     lineNumbers: false,
-    theme: 'light',
+    theme: 'css-variables',
   },
 }
 
