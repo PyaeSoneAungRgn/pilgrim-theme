@@ -7,11 +7,11 @@ const { modes, currentMode, currentModeLabel, handleChange } =
 
 <template>
   <div class="flex items-center gap-6">
-    <div class="flex-shrink-0 text-gray-600 dark:text-gray-400">
+    <div class="flex-shrink-0 text-gray-600">
       Choose Theme
     </div>
     <div
-      class="relative flex items-center ring-1 ring-slate-900/10 rounded-lg shadow-sm p-1.5 px-3 text-slate-700 font-semibold dark:bg-slate-600 dark:ring-0 dark:highlight-white/5 dark:text-slate-200">
+      class="relative flex items-center ring-1 ring-slate-900/10 rounded-lg shadow-sm p-1.5 px-3 text-slate-700 font-semibold">
       <component v-for="{ value, icon } in modes" :is="icon" class="w-5 h-5 text-gray-500 mr-2" :class="{
         hidden: value !== currentMode,
         '!text-primary-500': currentMode === 'light',

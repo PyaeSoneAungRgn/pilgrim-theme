@@ -10,7 +10,7 @@ const githubUrl = computed(() => theme.value.githubUrl)
   <a
     v-if="githubUrl"
     :href="githubUrl"
-    class="text-gray-500 dark:text-gray-400"
+    class="text-gray-500"
   >
     <svg
       class="w-5 fill-current"

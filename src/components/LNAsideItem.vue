@@ -17,11 +17,11 @@ function onClick({ target: el }: Event) {
 <template>
   <li
     v-for="{ children, link, title } in headers"
-    class="text-gray-700 dark:text-gray-500 text-sm"
+    class="text-gray-700 text-sm"
   >
     <a
       @click="onClick"
-      class="outline-link block py-1 dark:hover:text-gray-400"
+      class="outline-link block py-1"
       :href="link"
     >
       {{ title }}
@@ -30,7 +30,7 @@ function onClick({ target: el }: Event) {
     <template v-if="children?.length">
       <li v-for="subItem in children" class="leading-normal ml-2">
         <a
-          class="group py-0.5 flex items-start outline-link text-gray-700 dark:text-gray-500"
+          class="group py-0.5 flex items-start outline-link text-gray-700"
           :href="subItem.link"
         >
           <svg
@@ -41,7 +41,7 @@ function onClick({ target: el }: Event) {
             viewBox="0 3 24 24"
             stroke-width="4"
             stroke="currentColor"
-            class="mr-2 flex-shrink-0 text-gray-400 dark:text-gray-700 group-hover:text-gray-500 dark:group-hover:text-gray-500"
+            class="mr-2 flex-shrink-0 text-gray-400 group-hover:text-gray-500"
           >
             <path
               stroke-linecap="round"
@@ -50,7 +50,7 @@ function onClick({ target: el }: Event) {
             />
           </svg>
 
-          <span class="dark:group-hover:text-gray-400">{{
+          <span class="">{{
             subItem.title
           }}</span>
         </a>

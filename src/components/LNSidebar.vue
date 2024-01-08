@@ -17,7 +17,7 @@ const sidebarItems = theme.value.sidebar.map(item => ({
 <template>
   <nav class="flex flex-col gap-6">
     <div v-for="{ text, items } in sidebarItems">
-      <span class="text-gray-700 dark:text-gray-400 font-bold text-sm">
+      <span class="text-gray-700 font-bold text-sm">
         {{ text }}
       </span>
 

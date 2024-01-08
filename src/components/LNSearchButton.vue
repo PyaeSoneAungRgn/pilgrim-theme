@@ -9,9 +9,9 @@ withDefaults(defineProps<SearchButtonProps>(), {
 </script>
 
 <template>
-  <div class="bg-white dark:bg-gray-900 relative pointer-events-auto">
+  <div class="bg-white relative pointer-events-auto">
     <button
-      class="hidden w-full lg:flex items-center text-sm leading-6 text-gray-400 rounded-md ring-1 ring-gray-900/10 shadow-sm py-1.5 pl-2 pr-3 hover:ring-gray-300 dark:hover:ring-gray-800/10 dark:bg-gray-800 dark:shadow-[inset_0_1px_0_0_rgba(255,255,255,0.1)] dark:hover:bg-gray-700"
+      class="hidden w-full lg:flex items-center text-sm leading-6 text-gray-400 rounded-md ring-1 ring-gray-900/10 shadow-sm py-1.5 pl-2 pr-3 hover:ring-gray-300"
     >
       <svg
         xmlns="http://www.w3.org/2000/svg"

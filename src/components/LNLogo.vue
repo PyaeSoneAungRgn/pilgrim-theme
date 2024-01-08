@@ -5,7 +5,6 @@ const { theme } = useData()
 
 <template>
   <a :href="withBase('/')">
-    <img v-bind="$attrs" class="block dark:hidden" :src="withBase(theme.logo.light)" alt="logo" />
-    <img v-bind="$attrs" class="hidden dark:block" :src="withBase(theme.logo.dark)" alt="logo" />
+    <img v-bind="$attrs" :src="withBase(theme.logo.light)" alt="logo" />
   </a>
 </template>

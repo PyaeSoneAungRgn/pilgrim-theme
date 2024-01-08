@@ -62,14 +62,14 @@ function setDotMenuOpen(value: boolean): void {
 
 <template>
   <header
-    class="bg-white/80 dark:bg-gray-900/80 backdrop-blur border-b dark:border-gray-700 sticky top-0 z-50 w-full h-[3.3rem] flex-none"
+    class="bg-white/80 backdrop-blur border-b sticky top-0 z-50 w-full h-[3.3rem] flex-none"
   >
     <div class="max-w-[90rem] px-4 sm:px-6 md:px-8 mx-auto h-[3.3rem]">
       <div class="flex items-center h-[3.3rem] gap-4">
         <button
           type="button"
           @click="setIsOpen(true)"
-          class="md:hidden text-gray-600 dark:text-gray-400"
+          class="md:hidden text-gray-600"
         >
           <span class="sr-only">Navigation</span>
           <Bars3Icon class="flex-shrink-0 w-6" />
@@ -77,14 +77,14 @@ function setDotMenuOpen(value: boolean): void {
 
         <Dialog :open="isOpen" @close="setIsOpen" class="relative z-50">
           <div
-            class="fixed inset-0 bg-white/25 dark:bg-gray-800/30 backdrop-blur"
+            class="fixed inset-0 bg-white/25 backdrop-blur"
             aria-hidden="true"
           />
 
           <div class="fixed inset-0 overflow-y-auto">
             <div class="flex min-h-full">
               <DialogPanel
-                class="bg-white dark:bg-gray-900 shadow p-6 w-[230px]"
+                class="bg-white shadow p-6 w-[230px]"
               >
                 <LNSidebar />
               </DialogPanel>
@@ -94,7 +94,7 @@ function setDotMenuOpen(value: boolean): void {
 
         <slot name="logo">
           <LNLogo
-            class="flex-shrink-0 h-[24px] text-gray-500 dark:text-white"
+            class="flex-shrink-0 h-[24px] text-gray-500"
             :alt="site.title"
           />
         </slot>
@@ -102,7 +102,7 @@ function setDotMenuOpen(value: boolean): void {
         <LNVersionPicker v-if="shouldShowVersionPicker" />
 
         <div
-          class="ml-auto md:flex items-center md:divide-x md:divide-gray-200 md:dark:divide-gray-700"
+          class="ml-auto md:flex items-center md:divide-x md:divide-gray-200"
         >
           <div
             v-if="shouldShowNavItems"
@@ -111,7 +111,7 @@ function setDotMenuOpen(value: boolean): void {
             <a
               v-for="{ text, link } in navItems"
               :href="link"
-              class="text-sm font-medium text-gray-600 dark:text-gray-400 hover:text-primary-500"
+              class="text-sm font-medium text-gray-600 hover:text-primary-500"
             >
               {{ text }}
             </a>
@@ -125,7 +125,7 @@ function setDotMenuOpen(value: boolean): void {
             <button
               type="button"
               @click="openSearch"
-              class="md:hidden flex-shrink-0 text-gray-600 dark:text-gray-400"
+              class="md:hidden flex-shrink-0 text-gray-600"
             >
               <span class="sr-only">Search</span>
               <MagnifyingGlassIcon class="w-6" />
@@ -134,7 +134,7 @@ function setDotMenuOpen(value: boolean): void {
             <button
               @click="setDotMenuOpen(true)"
               type="button"
-              class="md:hidden flex-shrink-0 text-gray-600 dark:text-gray-400"
+              class="md:hidden flex-shrink-0 text-gray-600"
             >
               <span class="sr-only">More</span>
               <EllipsisVerticalIcon class="w-6" />
@@ -146,14 +146,14 @@ function setDotMenuOpen(value: boolean): void {
               class="relative z-50"
             >
               <div
-                class="fixed inset-0 bg-white/25 dark:bg-gray-800/30 backdrop-blur"
+                class="fixed inset-0 bg-white/25 backdrop-blur"
                 aria-hidden="true"
               />
 
               <div class="fixed inset-0 overflow-y-auto">
                 <div class="flex justify-end p-6">
                   <DialogPanel
-                    class="bg-white dark:bg-gray-900 shadow p-8 w-[330px] space-y-8 rounded-lg divide-y divide-gray-200 dark:divide-gray-600"
+                    class="bg-white shadow p-8 w-[330px] space-y-8 rounded-lg divide-y divide-gray-200"
                   >
                     <div
                       v-if="shouldShowNavItems || shouldShowGitHubLink"

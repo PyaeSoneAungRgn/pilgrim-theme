@@ -303,14 +303,14 @@ function formMarkRegex(terms: Set<string>) {
 
       <!-- Shell -->
       <div
-        class="relative flex flex-col my-20 mx-auto p-4 bg-white dark:bg-gray-950 shadow-lg rounded-lg w-[min(100vw-60px,900px)] max-h-[min(100vh-128px,900px)] gap-3"
+        class="relative flex flex-col my-20 mx-auto p-4 bg-white shadow-lg rounded-lg w-[min(100vw-60px,900px)] max-h-[min(100vh-128px,900px)] gap-3"
       >
         <div
-          class="rounded-lg flex gap-2 items-center px-2 border border-gray-300 dark:border-gray-700 cursor-text"
+          class="rounded-lg flex gap-2 items-center px-2 border border-gray-300 cursor-text"
           @pointerup="onSearchBarClick($event)"
         >
           <svg
-            class="w-6 h-6 text-gray-500 dark:text-gray-300"
+            class="w-6 h-6 text-gray-500"
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 24 24"
             fill="currentColor"
@@ -324,7 +324,7 @@ function formMarkRegex(terms: Set<string>) {
 
           <!-- Back Button -->
           <button
-            class="md:hidden w-6 h-6 text-gray-500 hover:text-primary-500 dark:text-gray-300"
+            class="md:hidden w-6 h-6 text-gray-500 hover:text-primary-500"
             :title="$t('modal.backButtonTitle')"
             @click="$emit('close')"
           >
@@ -347,12 +347,12 @@ function formMarkRegex(terms: Set<string>) {
             ref="searchInput"
             v-model="filterText"
             :placeholder="theme.search.options.placeholder"
-            class="search-input w-full text-inherit py-2 focus:outline-none dark:bg-gray-950 dark:text-gray-300"
+            class="search-input w-full text-inherit py-2 focus:outline-none"
           />
 
           <!-- Clear Button -->
           <button
-            class="w-5 h-5 text-gray-500 hover:text-primary-500 dark:text-gray-300 mr-2"
+            class="w-5 h-5 text-gray-500 hover:text-primary-500 mr-2"
             :title="$t('modal.resetButtonTitle')"
             @click="filterText = ''"
           >
@@ -392,7 +392,7 @@ function formMarkRegex(terms: Set<string>) {
           >
             <div class="m-2 w-full overflow-hidden">
               <div
-                class="titles relative flex flex-wrap items-center gap-1 py-1 z-[1001] text-gray-600 [&_mark]:text-black [&_mark]:font-bold [&_mark]:bg-transparent dark:[&_mark]:text-white"
+                class="titles relative flex flex-wrap items-center gap-1 py-1 z-[1001] text-gray-600 [&_mark]:text-black [&_mark]:font-bold [&_mark]:bg-transparent"
                 :class="{
                   '!text-white [&_mark]:text-white': selectedIndex === index,
                 }"
@@ -442,11 +442,11 @@ function formMarkRegex(terms: Set<string>) {
         </div>
 
         <div
-          class="sm:hidden md:flex text-sm md:items-center gap-4 leading-tight dark:text-white"
+          class="sm:hidden md:flex text-sm md:items-center gap-4 leading-tight"
         >
           <span class="flex items-center gap-2">
             <kbd
-              class="bg-gray-100 dark:bg-gray-800 rounded inline-flex items-center justify-center h-6 px-2"
+              class="bg-gray-100 rounded inline-flex items-center justify-center h-6 px-2"
               :aria-label="$t('modal.footer.navigateUpKeyAriaLabel')"
             >
               <svg width="14" height="14" viewBox="0 0 24 24">
@@ -461,7 +461,7 @@ function formMarkRegex(terms: Set<string>) {
               </svg>
             </kbd>
             <kbd
-              class="bg-gray-100 dark:bg-gray-800 rounded inline-flex items-center justify-center h-6 px-2"
+              class="bg-gray-100 rounded inline-flex items-center justify-center h-6 px-2"
               :aria-label="$t('modal.footer.navigateDownKeyAriaLabel')"
             >
               <svg width="14" height="14" viewBox="0 0 24 24">
@@ -479,7 +479,7 @@ function formMarkRegex(terms: Set<string>) {
           </span>
           <span class="flex items-center gap-2">
             <kbd
-              class="bg-gray-100 dark:bg-gray-800 rounded inline-flex items-center justify-center h-6 px-2"
+              class="bg-gray-100 rounded inline-flex items-center justify-center h-6 px-2"
               :aria-label="$t('modal.footer.selectKeyAriaLabel')"
             >
               <svg width="14" height="14" viewBox="0 0 24 24">
@@ -499,7 +499,7 @@ function formMarkRegex(terms: Set<string>) {
           </span>
           <span class="flex items-center gap-2">
             <kbd
-              class="bg-gray-100 dark:bg-gray-800 rounded inline-flex items-center justify-center h-6 px-2"
+              class="bg-gray-100 rounded inline-flex items-center justify-center h-6 px-2"
               :aria-label="$t('modal.footer.closeKeyAriaLabel')"
               >esc</kbd
             >

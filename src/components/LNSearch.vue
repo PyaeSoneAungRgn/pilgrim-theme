@@ -140,7 +140,7 @@ const provider = __ALGOLIA__ ? 'algolia' : __VP_LOCAL_SEARCH__ ? 'local' : ''
 
 <template>
   <div class="sticky top-0 -ml-0.5">
-    <div class="h-10 bg-gray-50 dark:bg-gray-900" />
+    <div class="h-10 bg-gray-50" />
     <template v-if="provider === 'local'">
       <LNLocalSearchBox v-if="showSearch" @close="showSearch = false" />
 
@@ -163,6 +163,6 @@ const provider = __ALGOLIA__ ? 'algolia' : __VP_LOCAL_SEARCH__ ? 'local' : ''
       <!--      </div>-->
     </template>
 
-    <div class="h-8 bg-gradient-to-b from-gray-50 dark:from-gray-900" />
+    <div class="h-8 bg-gradient-to-b from-gray-50" />
   </div>
 </template>

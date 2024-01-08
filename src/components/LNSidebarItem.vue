@@ -12,7 +12,7 @@ const { isActiveLink } = useSidebarControl(computed(() => props.item))
 
 <template>
   <a :href="item.link"
-    class="text-sm text-gray-500 hover:text-gray-600 border-l border-gray-300/50 dark:border-gray-800 flex items-start pl-4 py-1 hover:border-primary-500 dark:hover:border-gray-700"
+    class="text-sm text-gray-500 hover:text-gray-600 border-l border-gray-300/50 flex items-start pl-4 py-1 hover:border-primary-500"
     :class="{
       '!text-primary-500 !border-primary-500': isActiveLink,
     }">

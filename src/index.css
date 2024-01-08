@@ -23,7 +23,7 @@ html {
 }
 
 body {
-  @apply bg-gray-50 dark:bg-gray-900 min-h-full;
+  @apply bg-gray-50 min-h-full;
 }
 
 div[class*='language-'] {
@@ -69,11 +69,7 @@ div[class*='language-'] pre[class*='shiki'] {
 
 .content div[class*='language-'] pre {
   background-color: var(--shiki-color-background);
-  @apply border border-gray-200 dark:border-gray-300;
-}
-
-.dark .content div[class*='language-'] pre {
-  filter: invert(100%) hue-rotate(180deg);
+  @apply border border-gray-200;
 }
 
 .content p > code,
@@ -117,63 +113,24 @@ div[class*='language-'] pre[class*='shiki'] {
 }
 
 .prose .info {
-  @apply bg-blue-100 dark:bg-transparent border-blue-200 dark:border-blue-500 rounded-lg text-gray-700 px-6;
-}
-
-.prose .info .custom-block-title {
-  @apply dark:text-blue-300;
-}
-
-.prose .tip p,
-.prose .warning p,
-.prose .danger p,
-.prose .info p {
-  @apply dark:text-gray-300;
+  @apply bg-blue-100 border-blue-200 rounded-lg text-gray-700 px-6;
 }
 
 .prose .warning {
-  @apply bg-yellow-100 dark:bg-transparent border-yellow-300 rounded-lg text-gray-700 px-6;
-}
-
-.prose .tip a {
-  @apply dark:border-yellow-300;
-}
-
-.prose .warning .custom-block-title {
-  @apply dark:text-yellow-300;
-}
-
-.prose .info .custom-block-title {
-  @apply dark:text-blue-300;
+  @apply bg-yellow-100 border-yellow-300 rounded-lg text-gray-700 px-6;
 }
 
 .prose .tip {
-  @apply bg-purple-100 border-purple-200 rounded-lg text-gray-700 px-6 dark:bg-transparent dark:border-purple-500 dark:text-purple-300;
-}
-
-.prose .tip a {
-  @apply dark:border-purple-500;
-}
-
-.prose .tip .custom-block-title {
-  @apply dark:text-purple-300;
+  @apply bg-purple-100 border-purple-200 rounded-lg text-gray-700 px-6;
 }
 
 .prose .danger {
-  @apply bg-red-100 border-red-200 rounded-lg text-red-700 px-6 dark:bg-transparent dark:border-red-500 dark:text-red-500;
+  @apply bg-red-100 border-red-200 rounded-lg text-red-700 px-6;
 }
 
 .prose .danger strong,
 .prose .danger a {
   @apply text-red-700 font-bold;
-}
-
-.prose .danger .custom-block-title {
-  @apply dark:text-red-500;
-}
-.prose .danger strong,
-.prose .danger a {
-  @apply dark:text-red-500;
 }
 
 .prose img {
@@ -186,11 +143,11 @@ div[class*='language-'] pre[class*='shiki'] {
 }
 
 .DocSearch-Container {
-  @apply bg-white/90 dark:bg-gray-800/30 backdrop-blur;
+  @apply bg-white/90 backdrop-blur;
 }
 
 .DocSearch .DocSearch-Modal {
-  @apply bg-white dark:bg-gray-800 shadow-none max-w-4xl rounded-xl;
+  @apply bg-white shadow-none max-w-4xl rounded-xl;
 }
 
 .DocSearch .DocSearch-Form {
@@ -198,11 +155,11 @@ div[class*='language-'] pre[class*='shiki'] {
 }
 
 .DocSearch .DocSearch-Input {
-  @apply dark:text-gray-300 dark:placeholder:text-gray-400 px-4;
+  @apply px-4;
 }
 
 .DocSearch .DocSearch-SearchBar {
-  @apply bg-transparent py-2 px-3 border-b border-gray-200 dark:border-gray-700;
+  @apply bg-transparent py-2 px-3 border-b border-gray-200;
 }
 
 .DocSearch .DocSearch-Form {
@@ -220,12 +177,12 @@ div[class*='language-'] pre[class*='shiki'] {
 
 /* Search Footer */
 .DocSearch .DocSearch-Footer {
-  @apply bg-transparent shadow-none border-t dark:border-gray-700;
+  @apply bg-transparent shadow-none border-t ;
 }
 
 /* Search Reset Button */
 .DocSearch .DocSearch-Reset {
-  @apply text-gray-600 dark:text-white;
+  @apply text-gray-600;
 }
 
 /* Search Results Dropdown */
@@ -235,11 +192,11 @@ div[class*='language-'] pre[class*='shiki'] {
 
 /* Search Hits */
 .DocSearch .DocSearch-Hit-source {
-  @apply bg-transparent text-gray-600 dark:text-gray-400 uppercase tracking-widest font-bold text-xs py-6;
+  @apply bg-transparent text-gray-600 uppercase tracking-widest font-bold text-xs py-6;
 }
 
 .DocSearch .DocSearch-Hit {
-  @apply rounded-none shadow-none dark:text-white;
+  @apply rounded-none shadow-none;
 }
 
 .DocSearch .DocSearch-Hit-title {
@@ -251,7 +208,7 @@ div[class*='language-'] pre[class*='shiki'] {
 }
 
 .DocSearch .DocSearch-Hit a {
-  @apply dark:bg-gray-800 rounded-lg shadow-none;
+  @apply rounded-lg shadow-none;
 }
 
 .DocSearch .DocSearch-Hit[aria-selected='true'] a {
@@ -261,5 +218,5 @@ div[class*='language-'] pre[class*='shiki'] {
 /* Search Shortcuts */
 .DocSearch .DocSearch-Commands-Key {
   background: none;
-  @apply bg-gray-100 dark:bg-gray-900 shadow-none;
+  @apply bg-gray-100 shadow-none;
 }
