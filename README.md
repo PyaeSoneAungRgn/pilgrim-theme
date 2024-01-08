@@ -1,6 +1,23 @@
 # 🧑‍🚀 Pilgrim Theme for Vitepress
 
-Pilgrim is a documentation theme for Vitepress.
+Forked from [davidhemphill/pilgrim-theme](https://github.com/davidhemphill/pilgrim-theme), disable the dark theme.
+
+## Installation
+
+To get started, add the repository to your application's package.json file:
+
+```json
+"dependencies": {
+    "@hempworks/pilgrim": "github:PyaeSoneAungRgn/pilgrim-theme",
+    "@tailwindcss/typography": "^0.5.9",
+    "autoprefixer": "^10.4.14",
+    "tailwindcss": "^3.3.2",
+    "vitepress": "^1.0.0-beta.1"
+},
+```
+
+
+## Usage
 
 To use this theme in your own Vitepress project
 

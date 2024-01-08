@@ -1,1 +1,0 @@
-<meta http-equiv="refresh" content="0;URL='/docs/4.0/installation'" /> 

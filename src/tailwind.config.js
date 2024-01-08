@@ -7,7 +7,6 @@ module.exports = {
     './src/**/*.{html,js,vue,ts}',
     './node_modules/@hempworks/pilgrim/src/**/*.{html,js,vue,ts}',
   ],
-  darkMode: false,
   theme: {
     extend: {
       colors: { gray: colors.slate, blue: colors.sky, primary: colors.sky },
