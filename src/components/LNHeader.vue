@@ -17,7 +17,6 @@ import { onContentUpdated, useData } from 'vitepress'
 import { computed, ref } from 'vue'
 import LNGitHubLink from './LNGitHubLink.vue'
 import LNHeaderLink from './LNHeaderLink.vue'
-import LNMobileThemeSwitcher from './LNMobileThemeSwitcher.vue'
 
 const { site, theme } = useData()
 
@@ -168,14 +167,6 @@ function setDotMenuOpen(value: boolean): void {
                         v-if="shouldShowGitHubLink"
                         :item="{ text: 'GitHub', link: githubUrl }"
                       />
-                    </div>
-
-                    <div
-                      :class="{
-                        'pt-6': shouldShowNavItems || shouldShowGitHubLink,
-                      }"
-                    >
-                      <LNMobileThemeSwitcher />
                     </div>
                   </DialogPanel>
                 </div>
